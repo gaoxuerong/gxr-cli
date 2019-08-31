@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-gxr",
   "version": "1.0.0",
-  "description": "- vue-cli-gxr install",
+  "description": "vue-cli-gxr install",
   "main": "index.js",
   "dependencies": {
     "commander": "^3.0.0"
