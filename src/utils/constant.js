@@ -1,8 +1,13 @@
 const version = require('../../package.json')
 const HOME = process.env[process.platform === 'win32' ? 'USERPROFILE' : 'HOME']
-export const RC = `${HOME}/.gxrrc`
-export const DEFAULTS = {
-    registry: 'gxr-cli-template',
+const RC = `${HOME}/.gxrrc`
+const DEFAULTS = {
+    registry: 'vue-cli-gxr',
     type: 'orgs'
 }
-module.exports = version
+module.exports = {
+    version,
+    DEFAULTS,
+    RC
+}
+export const DOWNLOAD = `${HOME}/.template`

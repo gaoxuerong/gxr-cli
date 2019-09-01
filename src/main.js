@@ -1,5 +1,5 @@
 const program = require('commander');
-const VERSION = require('./utils/constant')
+const constant = require('./utils/constant')
 import main from './index'
 let actionMap = {
   install: {
@@ -46,4 +46,4 @@ function help() {
 }
 program.on('-h',help)
 program.on('--help',help)
-program.version(VERSION, '-V --version').parse(process.argv)
+program.version(constant.version.version, '-V --version').parse(process.argv)
